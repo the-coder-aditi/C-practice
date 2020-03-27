@@ -72,6 +72,48 @@ for ( j=n; j<=u; ++j)
         }
 	return 0;
 }
+3.GRADE LIST
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+float grpt;
+cout<<"Enter grade point(0-5):";
+cin>>grpt;
+
+if(grpt==5.0)
+{
+cout<<"Grade:O";
+}
+else if(grpt<5.0&&grpt>=4.5)
+{
+cout<<"Grade:A";
+}
+else if(grpt<4.5&&grpt>=4.0)
+{
+cout<<"Grade:B";
+}
+else if(grpt<4.0&&grpt>=3.0)
+{
+cout<<"Grade:C";
+}
+
+else if(grpt<3.0&&grpt>=2.0)
+{
+cout<<"Grade:D";
+}
+else if(grpt<2.0&&grpt>=1.0)
+
+
+{
+
+cout<<"Grade:E";
+}
+else 
+cout<<"Grade:F";
+ getch();
+}
+
 
 Ques 4)LEAP YEAR
 #include <iostream.h>
@@ -91,6 +133,8 @@ int main()
     cout<<"\nNot a Leap Year";
     return 0;
 }
+5)Rainbow spelling
+
 
 Ques 6)DIGIT
 #include <iostream.h>
