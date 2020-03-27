@@ -1,5 +1,5 @@
 # C-practice
-C++ coding
+1.MONTHS IN A YEAR
 #include<iostream.h>
 #include<conio.h>
 void main()
@@ -43,6 +43,106 @@ getch();
 }
 
 
+
+
+2.
+
+Ques 2)PRIME NUMBERS
+#include <iostream.h> 
+int main() {
+	int n, i, flag;
+    int u,j;
+
+	cout<<"Enter Lower Limit :";
+	cin>>n;
+    cout<< "\nEnter Upper limit :";
+    cin>>u;
+for ( j=n; j<=u; ++j)
+    {
+        flag=0;
+	for(i=2;i<=j/2;++i) { 
+		if(j%i==0) { 
+			flag=1; 
+		} 
+            }
+
+	if (flag==0)
+		cout<<n<<endl;
+            
+        }
+	return 0;
+}
+
+Ques 4)LEAP YEAR
+#include <iostream.h>
+#include <math.h>
+
+int main()
+{
+    int year;
+    cout<<"Enter year:";
+    cin>>year;
+    if (year<=1000)
+    cout<<"\nInvalid argument";
+    else
+    if (year%4==0)
+    cout<<"\nLeap year";
+    else
+    cout<<"\nNot a Leap Year";
+    return 0;
+}
+
+Ques 6)DIGIT
+#include <iostream.h>
+#include <math.h>
+
+int main()
+{
+    int dig,key,z;
+    int count=0;
+    cout<<"Enter Digit:";
+    cin>>dig;
+    cout<<"\nEnter Key:";
+    cin>>key;
+    while(dig>0)
+    {
+        z=dig%10;
+        if (z==key)
+        count=count+1;
+        dig=dig/10;
+    }
+    cout<<"The key appeared %d times",count;
+    return 0;
+
+Ques 10)LUCKY NUMBERS
+#include <iostream.h>
+#include <math.h>
+
+int main()
+{
+    int num,x,z;
+    cout<<"Enter No.:";
+    cin>>num;
+    int sum=0;
+    if ((num<1000) || (num>9999))
+    {
+        cout<<"Invalid Arguement";
+    
+        }
+    z=num;
+    while (z>0)
+       {
+        x=z%10;
+        sum=sum+x;
+        z=z/10;
+    }
+    if ((sum%3==0) || (sum%5==0) || (sum%7==0))
+    cout<<"Lucky No. is"<<num;
+    else
+    cout<<"Unlucky no.";
+    return 0;
+}
+}
 
 
 
